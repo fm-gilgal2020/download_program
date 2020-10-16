@@ -1,0 +1,15 @@
+cd /mnt/c/Users/danil/Documents/Radio/Script/MeteoRoh/
+wget --output-document=.sitio-clima http://infoclima.com/pronosticos/argentina/misiones/obera/
+
+cat .sitio-clima | grep 'rmica <span>' -a -i | cut -c 45-46 > .Temp.txt
+cat .sitio-clima | grep '<p>Humedad: <span>'  | cut -c 19-20 > .Hume.txt
+
+Temp=´cat .Temp2.txt´
+Hume=´cat .Hume.txt´
+
+rm .MeteoRoh.txt
+
+echo Temperature:$Temp >> MeteoRoh.txt
+echo Humidity:$Hume >> MeteoRoh.txt
+
+
