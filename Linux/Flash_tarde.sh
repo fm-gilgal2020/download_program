@@ -1,11 +1,9 @@
 #!/bin/bash
 
 
-cd/mnt/c/Users/fmgil/Documents/Radio/Programas/Flash_de_noticias/Vespertino
-       
-
-#rm *
-#rm flash08.mp3 flash09.mp3 flash10.mp3 flash11.mp3 flash12.mp3 flash13.mp3 flash14.mp3
+cd /mnt/c/Users/fmgil/Documents/Radio/Programas/Flash_de_noticias/Vespertino || return 'error, no existe la carpeta'
+#rm *.mp3
+rm flash08.mp3 flash09.mp3 flash10.mp3 flash11.mp3 flash12.mp3 flash13.mp3 flash14.mp3
 wget --user fmgilgal --password 123abc http://www.descarganoticias.com.ar/editnoti/flash08.mp3
 wget --user fmgilgal --password 123abc http://www.descarganoticias.com.ar/editnoti/flash09.mp3
 wget --user fmgilgal --password 123abc http://www.descarganoticias.com.ar/editnoti/flash10.mp3
@@ -26,7 +24,7 @@ wget --user fmgilgal --password 123abc http://www.descarganoticias.com.ar/editno
 #wget --user fmgilgal --password 123abc http://www.descarganoticias.com.ar/genexflash/flash14.mp3
 
 #################################################################################################
-rm -r *.c flash08.mp3 flash09.mp3 flash10.mp3 flash11.mp3 flash12.mp3 flash13.mp3 flash14.mp3
+rm -r flash08.mp3 flash09.mp3 flash10.mp3 flash11.mp3 flash12.mp3 flash13.mp3 flash14.mp3
 
 
 exit

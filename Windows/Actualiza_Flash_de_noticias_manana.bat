@@ -1,1 +1,1 @@
-bash /mnt/f/RADIO/Script/Linux/Flash_manana.sh
+bash  /mnt/c/users/fmgil/Documents/Radio/script/Linux/Flash_manana.sh
